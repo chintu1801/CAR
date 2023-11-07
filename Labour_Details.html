@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+ <html>
+<head>
+    <meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+<title>LABOUR DETAILS</title>
+
+   <style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+    
+     <style>
+  body {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+
+</head>
+ 
+<body bgcolor=""> 
+<center>
+<marquee><h1 class="impact" style="color:white;"><b><i>CAR CARE SERVICE CENTER</i></b></h1></marquee>
+<h1 class="impact" style="color:white;"><b>LABOUR DETAILS</b></h1>
+   <form  method="POST" action="Labour_Details.php">  
+ <table align="center" cellpadding="10" bgcolor="white" style="border:1px solid black" bordercolor="#D7DF01">
+     
+    
+     <tr>
+     <td><b>Labour Code :</b></td>
+     <td><select name="LC" required="">
+        <option>Select</option>
+        <option>S001</option>
+        <option>S002</option>
+        <option>S003</option>
+        <option>S004</option>
+        <option>S005</option>
+        <option>S006</option>
+        <option>S007</option>
+        <option>S008</option>
+        <option>S009</option>
+        <option>S010</option>
+        <option>S011</option>
+        
+        </select>
+     </tr>
+     
+     
+     
+     <tr>
+     <td><b>Job Card No :</b></td>
+     <td><input type="text" name="jobcno" required=""></td>
+     </tr>
+     
+   
+      <tr>
+     <td><b>Tax :</b></td>
+     <td><input type="text" name="tax" required=""></td>
+     </tr>
+     
+      <tr>
+     <td><b>GST Amount  :</b></td>
+     <td><input type="text" name="GA" required=""></td>
+     </tr>
+     
+      <tr>
+     <td><b>Discount  :</b></td>
+     <td><input type="text" name="discount" required=""></td>
+     </tr>
+     
+     
+    <!----- Submit  ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input class="button" type="Submit" name="Submit" value="Submit"></input>
+</td>
+</tr>     
+  </table>
+    </form>
+</center>
+</body>
+</html>

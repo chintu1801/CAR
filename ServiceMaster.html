@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="" />
+
+	<title>SERVICE MASTER</title>
+    
+    <style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+function Form(){
+  var S=document.forms["Form1"]["Service_Code"].value;
+  if (S=="")
+  {
+    alert("Service Code must be filled out");
+    return false;
+    
+    }
+}
+</script>
+
+ <--
+  <style>
+  body {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+  -->
+
+ 
+
+</head>
+
+<body bgcolor="">
+<center>
+<marquee><h1 class="impact" style="color:white;"><b><i>CAR CARE SERVICE CENTER</i></b></h1></marquee>
+<h1 class="impact" style="color:white;"><b>SERVICE MASTER</b></h1>
+<form name="Form1" method="POST" action="ServiceMaster.php">
+
+
+<table align="center" cellpadding="10" bgcolor="white" style="border:1px solid black" bordercolor="#D7DF01">
+
+<tr>
+<td align="Right"><b>Servicee Code:</b></td>
+<td><input type="text" name="Service_Code" title="Service Code" required=""></td>
+</tr>
+
+<tr>
+<td align="Right"><b>Servicee Name:</b></td>
+<td><input type="text" name="Service_Name" title="Service Name" required=""></td>
+</tr>
+
+
+<tr>
+<td align="Right"><b>Servicee Type:</b></td>
+<td><select name="Service_Type" required="">
+<option>Select</option>
+<option>Chargeble</option>
+<option>Free</option>
+
+</select>
+</tr>
+
+
+<tr>
+<td align="Right"><b>Service Charge:</b></td>
+<td><input type="text" name="Service_Charge" title="Service Charge" required=""></td>
+</tr>
+
+
+<tr>
+<td colspan="2" align="center">
+<input type="Submit"class="button" name="Submit" value="Submit"onclick="return Form();"/></input>
+</td>
+</tr>
+
+</table>
+</center>
+</body>
+</html>

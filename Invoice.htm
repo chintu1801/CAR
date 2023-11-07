@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	
+	<title>INVOICE</title>
+    <style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+    <style>
+  body {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+    </head>
+
+<body bgcolor=""> 
+<center>
+<marquee><h1 class="impact" style="color:white;"><b><i>CAR CARE SERVICE CENTER</i></b></h1></marquee>
+<h1 class="impact" style="color:white;"><b>INVOICE </b></h1>
+    <form  method="POST" action="invoice.php">
+    
+   <table align="center" cellpadding="10" bgcolor="white" style="border:1px solid black" bordercolor="#D7DF01">
+
+<style>
+    h3{
+      font-family: Calibri; 
+      font-size: 40pt;         
+      font-style: normal; 
+      font-weight: bold; 
+      text-align: center; 
+      text-decoration: underline
+      
+    }
+</style>
+    
+    <!----- Invoice_No.---------------------------------------------------------->
+    
+    
+    <tr>
+     <td>Invoice_No :</td>
+     <td><input type="text" name="invoice_no" required=""></td>
+     </tr>
+      <!----- Invoice_Date.---------------------------------------------------------->
+     <tr>
+     <td>Invoice_Date :</td>
+     <td><input type="date" name="invoice_date" required=""></td>
+     </tr>
+     <!----- Job_Cardno.---------------------------------------------------------->
+     <tr>
+     <td>Job_Cardno :</td>
+     <td><input type="text" name="jobcard_no" required=""></td>
+     </tr>
+     
+     <!----- GST_Amount.---------------------------------------------------------->
+     <tr>
+     <td>GST_Amount :</td>
+     <td><input type="text" name="gst_amount"></td>
+     </tr>
+    <!----- Discount.---------------------------------------------------------->
+    <tr>
+     <td>Discount :</td>
+     <td><input type="text" name="discount"></td>
+     </tr>
+    <!----- Net_Bill_Amount.---------------------------------------------------------->
+    <tr>
+     <td>Net_Bill_Amount :</td>
+     <td><input type="text" name="net_bill_amount" required=""></td>
+     </tr>
+    
+ 
+    
+<!----- Submit  ------------------------------------------------->
+   <tr>
+   <td colspan="2" align="center">
+<input class="button" type="Submit" name="Submit" value="Submit"></input>
+   </table>
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<title>ITEM RETURN</title>
+     <style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+  <style>
+  body {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+    
+</head>
+
+<body bgcolor=""> 
+<center>
+<marquee><h1 class="impact" style="color:white;"><b><i>CAR CARE SERVICE CENTER</i></b></h1></marquee>
+
+<h1 class="impact" style="color:white;"><b>ITEM RETURN</b></h1>
+
+<form name="Item_Return" method="POST" action="Item_Return.php">
+
+<table align="center" cellpadding="10" bgcolor="white" style="border:1px solid black" bordercolor="#D7DF01">
+
+
+<!----- Return ID.---------------------------------------------------------->
+<tr>
+<td><b>Return ID:</b></td>
+<td><input type="text" name="Receipt_No"></td>
+</tr>
+
+<!----- Item Code.---------------------------------------------------------->
+
+<tr>
+<td><b>Item Code:</b></td>
+<td><select name="Return_Code" required="">
+        <option>Select</option>
+        <option>I101</option>
+        <option>I102</option>
+        <option>I103</option>
+        <option>I104</option>
+        <option>I105</option>
+        <option>I106</option>
+        <option>I107</option>
+        <option>I108</option>
+        <option>I109</option>
+        <option>I110</option>
+        <option>I111</option>
+        <option>I112</option>
+        <option>I113</option>
+        <option>I114</option>
+        
+        </select>
+</tr></td>
+
+<!----- Return_Date.---------------------------------------------------------->
+<tr>
+<td><b>Return Date:</b></td>
+<td><input type="date" name="Return_Date"/></td>
+</tr>
+
+
+<!----- Jobcardno.---------------------------------------------------------->
+<tr>
+<td><b>Job Card No:</b></td>
+<td><input type="text" name="Jobcardno"/></td>
+</tr>
+
+
+<!----- Quantity.---------------------------------------------------------->
+<tr>
+<td><b>Quantity:</b></td>
+<td><input type="text" name="Qty" required=""/></td>
+</tr>
+
+
+
+
+<!----- Value.---------------------------------------------------------->
+<tr>
+<td><b>Value:</b></td>
+<td><input type="text" name="Value" required=""/></td>
+</tr>
+
+
+ <!----- Submit  ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input class="button" type="Submit" name="Submit" value="Submit"></input>
+</td>
+</tr>
+
+
+
+
+</table>
+</form>
+</center>
+</body>
+</html>

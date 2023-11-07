@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="" />
+
+	<title>COMPLAIN MASTER</title>
+  <style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+    
+ <script>
+function Form(){
+  var C=document.forms["Form1"]["Complain_Id"].value;
+  if (C=="")
+  {
+    alert("Complain ID must be filled out");
+    return false;
+    
+    }
+}
+</script>
+
+  <--
+  <style>
+  body {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+  -->
+  
+</head>
+
+<body bgcolor=""> 
+
+<center>
+
+<marquee><h1 class="impact" style="color:white;"><b><i>CAR CARE SERVICE CENTER</i></b></h1></marquee>
+<h1 class="impact" style="color:white;"><b>COMPLAIN MASTER</b></h1>
+
+<form name="Form1" method="POST" action="ComplainMaster.php">
+
+
+<table align="center" cellpadding="10" bgcolor="white" style="border:1px solid black" bordercolor="#D7DF01">
+
+
+<tr>
+<td align="Right"><b>Complain Id:</b></td>
+<td><input type="text" name="Complain_Id" title="Complain Id" required=""></td>
+</tr>
+
+<tr>
+<td align="Right"><b>Complain Description:</b></td>
+<td><input type="text" name="Complain_Des" title="Complain Description" required=""></td>
+</tr>
+
+<tr>
+<td align="Right"><b>Bay No:</b></td>
+<td><input type="text" name="Bay_No" title="Bay No" required=""></td>
+</tr>
+
+
+<tr>
+<td colspan="2" align="center">
+<input class="button" type="Submit" name="Submit" value="Submit" onclick="return Form();"/></input>
+</td>
+</tr>
+
+</center>
+</table>
+</body>
+</html>

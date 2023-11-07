@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+ <html>
+<head>
+    <meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+<title>SUPPLIERBILL</title>
+ <style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+   <style>
+  body {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+
+</head>
+ 
+<body bgcolor=""> 
+<center>
+<marquee><h1 class="impact" style="color:white;"><b><i>CAR CARE SERVICE CENTER</i></b></h1></marquee>
+<h1 class="impact" style="color:white;"><b>SUPPLIER BILL</b></h1>
+    <form method="POST" action="SupplierBill.php">
+    <table align="center" cellpadding="10" bgcolor="white" style="border:1px solid black" bordercolor="#D7DF01">
+
+    
+<!----- SupplierBill.---------------------------------------------------------->
+<tr>
+<td><b>Supplier Bill:</b></td>
+<td><input type="text"name="SupplierBill"/>
+</td>
+</tr>
+ 
+<!----- Date ---------------------------------------------------------->
+<tr>
+<td><b>Bill Date:</b></td>
+<td><input type="Date"name="BillDate"/>
+</td>
+</tr>
+ 
+<!----- Supplier Code -------------------------------------------------------->
+<tr>
+<td><b>Supplier Code:</b></td>
+<td><select name="SupplierCode" required="">
+<option>Select</option>
+<option>M001</option>
+<option>H001</option>
+<option>N001</option>
+<option>S001</option>
+
+</select>
+</td>
+</tr>
+
+
+
+<!----- Gst rate -----------------------------------------------------------> 
+ <tr>
+<td><b>Gst Rate :</b></td>
+<td>
+<input type="text"name="Gst"/>
+</td>
+</tr>
+
+<!----- Gst Code -----------------------------------------------------------> 
+ <tr>
+<td><b>Gst Code:</b></td>
+<td>
+<input type="text"name="GstCode"/>
+</td>
+</tr>
+<!----- FreightCharges -----------------------------------------------------------> 
+ <tr>
+<td><b>Freight Charges:</b></td>
+<td>
+<input type="text"name="FreightCharges"/>
+</td>
+</tr>
+
+<!-----Item Code ---------------------------------------------------------->
+<tr>
+<td><b>Done:</b></td>
+<td><select name="Done" required="">
+<option>Select</option>
+<option>Yes</option>
+<option>No</option>
+</select>
+</td>
+</tr>
+
+<!-----Item name ---------------------------------------------------------->
+<tr>
+<td><b>Payment Mode:</b></td>
+<td><select name="PaymentMode" required="">
+<option>Select</option>
+<option>Cash</option>
+<option>Cheque</option>
+</select>
+</td>
+</tr>
+
+
+
+<!----- Uint Measure---------------------------------------------------------->
+<tr>
+<td><b>Amount:</b></td>
+<td><input type="text"name="Amount"/>
+</td>
+</tr>
+ 
+<!----- TotalAmount ---------------------------------------------------------->
+<tr>
+<td><b>Total Amount:</b></td>
+<td><input type="text"name="TotalAmount"/>
+</td>
+</tr>
+
+
+
+
+<!----- Submit  ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input class="button" type="Submit" name="Submit" value="Submit"></input>
+</td>
+</tr>
+
+</table>
+</form>
+ 
+</body>
+</html>
+        

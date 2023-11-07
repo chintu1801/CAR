@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ITEM MASTER</title>
+
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+<style>
+  body {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+  
+<body bgcolor=""> 
+<center>
+<marquee><h1 class="impact" style="color:white;"><b><i>CAR CARE SERVICE CENTER</i></b></h1></marquee>
+<h1 class="impact" style="color:white;"><b>ITEM MASTER</b></h1>
+    <form  method="POST" action="Item_Master.php">
+    <table align="center" cellpadding="10" bgcolor="white" style="border:1px solid black" bordercolor="#D7DF01">
+
+    
+<!----- Item_Code.---------------------------------------------------------->
+     <tr>
+     <td><b>Item Code :</b></td>
+     <td><input type="text" name="I_Code" required=""></td>
+     </tr>
+<!----- Item_Name.---------------------------------------------------------->     
+     <tr>
+     <td><b>Item Name :</b></td>
+     <td><input type="text" name="I_Name" required=""></td>
+     </tr>
+<!----- Abc_Code.---------------------------------------------------------->     
+     <tr>
+     <td><b>ABC Code :</b></td>
+     <td><select name="Abc_Code">
+       <option>A</option>
+       <option>B</option>
+       <option>C</option>
+     </select>
+     </td>
+     </tr>
+<!----- Unit of Meansurement.---------------------------------------------------------->
+    <tr>
+    <td><b>Unit Of Measurement :</b></td>
+         <td><select name="Unit_Measure">
+       <option>NO</option>
+       <option>LTR</option>
+       <option>SET</option>
+       <option>KG</option>
+       <option>GM</option>
+       <option>FT</option>
+       <option>INCH</option>
+     </select>
+     </td>
+    </tr>
+<!----- Quantity.---------------------------------------------------------->    
+    <tr>
+    <td><b>Quantity :</b></td>
+    <td><input type="text" name="Quantity" required=""></td>
+    </tr>
+<!----- Rate.---------------------------------------------------------->
+    <tr>
+    <td><b>Rate :</b></td>
+    <td><input type="text" name="Rate"></td>
+    </tr>
+<!----- Gst_Rate.---------------------------------------------------------->    
+    <tr>
+    <td><b>Gst Rate :</b></td>
+    <td><input type="text" name="Gst_Rate"></td>
+    </tr>
+<!----- Mini_Level.---------------------------------------------------------->
+    <tr>
+    <td><b>Mini Level :</b></td>
+    <td><input type="text" name="Mini_level"></td>
+    </tr>
+<!----- Max_Level.---------------------------------------------------------->    
+    <tr>
+    <td><b>Max Level :</b></td>
+    <td><input type="text" name="Max_level"></td>
+    </tr>
+<!----- War_Gu.---------------------------------------------------------->
+    <tr>
+    <td><b>War Gu :</b></td>
+    <td><input type="text" name="War_gu"></td>
+    </tr>
+ <!----- Submit  ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input class="button" type="Submit" name="Submit" value="Submit"></input>
+</td>
+</tr>
+   <center/>
+    </table>
+    </form>
+</body>
+</html>

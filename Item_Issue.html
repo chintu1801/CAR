@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	
+	<title>ITEM ISSUE</title>
+    <style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+    
+    <style>
+  body {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+ 
+</head>
+
+<body bgcolor=""> 
+<center>
+<marquee><h1 class="impact" style="color:white;"><b><i>CAR CARE SERVICE CENTER</i></b></h1></marquee>
+<h1 class="impact" style="color:white;"><b>ITEM ISSUE</b></h1>
+<form name="Item_Issue" method="POST" action="Item_Issue.php">
+ <table align="center" cellpadding="10" bgcolor="white" style="border:1px solid black" bordercolor="#D7DF01">
+
+    
+<!----- Issue_No.---------------------------------------------------------->
+<tr>
+<td><b>Issue No:</b></td>
+<td><input type="text" name="IssueNo"/></td>
+</tr>
+<!----- Date.---------------------------------------------------------->
+<tr>
+<td><b>Date:</b></td>
+<td><input type="Date" name="IDate"/></td>
+</tr>
+
+
+
+<!----- Item_Code.---------------------------------------------------------->
+
+<tr>
+<td><b>Item Code:</b></td>
+<td><select name="ICode" required="">
+        <option>Select</option>
+        <option>I101</option>
+        <option>I102</option>
+        <option>I103</option>
+        <option>I104</option>
+        <option>I105</option>
+        <option>I106</option>
+        <option>I107</option>
+        <option>I108</option>
+        <option>I109</option>
+        <option>I110</option>
+        <option>I111</option>
+        <option>I112</option>
+        <option>I113</option>
+        <option>I114</option>
+        </select>
+</tr>
+
+<!----- jobcardmo.---------------------------------------------------------->
+<tr>
+<td><b>Job Card No:</b></td>
+<td><input type="text" name="Jobcardno" /></td>
+</tr>
+
+<!----- Quantity.---------------------------------------------------------->
+<tr>
+<td><b>Quantity:</b></td>
+<td><input type="text" name="Issue_Qty" required=""/></td>
+</tr>
+
+<!----- Value.---------------------------------------------------------->
+<tr>
+<td><b>Value:</b></td>
+<td><input type="text" name="Issue_Value"/></td>
+</tr>
+
+
+<!----- Submit  ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input class="button" type="Submit" name="Submit" value="Submit"></input>
+</td>
+</tr>
+
+
+</table>
+</form>
+</center>
+</body>
+</html>

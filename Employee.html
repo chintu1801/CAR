@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+ <html>
+<head>
+    <meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="lolkittens" />
+
+<title>EMPLOYEE</title>
+ <style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<script lang="javascript">
+function Form()
+{
+    var Emp=document.forms["Form1"]["EMPLOYEE_ID"].value;;
+    if(Emp=="")
+    {
+        alert("enter Employee id")
+        return false;
+    }    
+
+}
+</script>
+  <--
+  <style>
+  body {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+  -->
+
+    
+</head>
+<body bgcolor="">
+
+<center>
+<marquee><h1 class="impact" style="color:white;"><b><i>CAR CARE SERVICE CENTER</i></b></h1></marquee>
+<h1 class="impact" style="color:white;"><b>EMPLOYEE</b></h1>
+
+    <form name="Form1" method="POST" action="Employee.php">
+    <table align="center" cellpadding="10" bgcolor="white" style="border:1px solid black" bordercolor="#D7DF01">
+
+    
+<!----- EMPLOYEE ID ---------------------------------------------------------->
+<tr>
+<td><b>Employee ID:</b></td>
+<td><input type="text"name="EmpId" title="EMPLOYEE ID" required=""/>
+</td>
+</tr>
+ 
+<!----- EMPLOYEE NAME ---------------------------------------------------------->
+<tr>
+<td><b>Employee Name:</b></td>
+<td><input type="text"name="EmpName"required=""/>
+
+</td>
+</tr>
+ 
+<!----- CATEGORY CODE -------------------------------------------------------->
+<tr>
+<td><b>Category Code:</b></td>
+<td><select name="CCode" required="">
+        <option>Select</option>
+        <option>C101</option>
+        <option>C102</option>
+        <option>C103</option>
+        <option>C104</option>
+        <option>C105</option>
+       
+        </select>
+</tr>
+<!-----CATEGORY NAME ---------------------------------------------------------->
+<tr>
+<td><b>Category Name:</b></td>
+<td><select name="CName" required="">
+        <option>Select</option>
+        <option>Engineer</option>
+        <option>Technician</option>
+        <option>User</option>
+        <option>Customer</option>
+        <option>Clerk</option>
+       
+        </select>
+</tr>
+ 
+<!----- EMPLOYEE ADDRESS ---------------------------------------------------------->
+<tr>
+<td><b>Employee Address:</b></td>
+<td><textarea name="EmpAddress" rows="4" cols="30"required=""></textarea></td>
+</td>
+</tr>
+<!----- EMPLOYEE CITY -----------------------------------------------------------> 
+ <tr>
+<td><b>Employee City:</b></td>
+<td>
+<input type="text"name="EmpCity"required=""/>
+</td>
+</tr>
+<!----- EMPLOYEE STATE -----------------------------------------------------------> 
+ <tr>
+<td><b>Employee State:</b></td>
+<td>
+<input type="text"name="EmpState"required=""/>
+</td>
+</tr>
+<!----- EMPLOYEE PINCODE -----------------------------------------------------------> 
+ <tr>
+<td><b>Employee Pin code:</b></td>
+<td>
+<input type="text"name="EmpPincode"required=""/>
+</td>
+</tr>
+<!----- Gender ----------------------------------------------------------->
+<tr>
+<td><b>Gender :</b></td>
+<td>
+Male <input type="radio" name="EmpGender" value="Male" />
+Female <input type="radio" name="EmpGender" value="Female" />
+</td>
+</tr>
+
+<!----- EMPLOYEE EMAILID ---------------------------------------------------------->
+<tr>
+<td><b>Employee Email ID:</b></td>
+<td><input type="text"name="EmpEmailId"required=""/>
+</td>
+</tr>
+ 
+<!----- EMPLOYEE lICENSE NO ---------------------------------------------------------->
+<tr>
+<td><b>Employee license No:</b></td>
+<td><input type="text"name="EmpLicenseNo"required=""/>
+</td>
+</tr>
+
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" class="button" name="Submit" value="submit" onclick="return check();"/>
+</td>
+</tr>
+
+</center>
+</table>
+</form>
+ 
+</body>
+</html>
+        

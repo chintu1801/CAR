@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+
+ <style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+<style>
+  body {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+<script type="Text/javascript">
+function stringlength()
+{ 
+ var pw = document.loginform.Password.value;            
+  
+   
+    if (pw.length<6)                                  
+    { 
+       alert( "Please more than 6 characters for password!" );
+            document.loginform.Password.focus() ;
+            return false;
+  }
+  }      
+</script>
+	<title>CAR CARE</title>
+    
+    
+</head>
+
+<body bgcolor=""> 
+<center>
+<marquee><h1 class="impact" style="color:white;"><b><i>CAR CARE SERVICE CENTER</i></b></h1></marquee>
+<h1 class="impact" style="color:white;"><b>Login</b></h1>
+<form  name="loginform" method="POST" action="login.php" onsubmit="return stringlength()" >
+<table align="center" cellpadding="10" bgcolor="white" style="border:1px solid black" bordercolor="#D7DF01">
+
+
+<tr>
+ <td><b>User Type :</b></td>
+<td><select name="Utype"> 
+  <option>User</option>
+  <option>Admin</option>
+</select></td>
+ <br/>
+</tr>
+
+<tr>
+<td><b>Username  :</b></td>
+<td><input type="text" name="UserName" required=""/></td>
+</tr>
+
+<tr>
+<td><b>Password  :</b></td>
+<td><input type="Password" name="Password"required=""/></td>
+</tr>
+
+ 
+<tr>
+<td colspan="2" align="center">
+<input class="button" type="Submit" name="Submit" value="Submit" onclick="return Form();"/></input>
+</td>
+</tr>
+
+
+<tr></tr> 
+
+</table>
+</form>
+</center>
+</body>
+</html>
